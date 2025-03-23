@@ -1,4 +1,4 @@
-// Your code here
+// write your code here
 const characterData = () => {
     const characters = document.getElementById('character-bar'); 
 
@@ -47,10 +47,10 @@ const characterData = () => {
                     characterVotes.textContent = parseInt(characterVotes.textContent, 10) + newVote;
                 };
 
-                // Reset votes when the reset button is clicked
+                // Reset votes and clear input when the reset button is clicked
                 resetButton.onclick = () => {
-                    characterVotes.textContent = "0";
-                    votesInput.value = "0";
+                    characterVotes.textContent = "0"; // Reset vote count
+                    votesInput.value = ""; // Clear input box
                 };
             });
 
